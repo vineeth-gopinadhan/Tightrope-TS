@@ -10,13 +10,12 @@
     "start": "node dist/tightrope.js",
     "test": "jest",
     "prettier": "prettier --write .",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && jest",
     "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run prettier",
-      "git add"
+      "npm run prettier"
     ]
   },
   "husky": {
