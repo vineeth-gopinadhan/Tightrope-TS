@@ -9,5 +9,8 @@
   },
   "jest": {
     "preset": "ts-jest"
-  }
+  },
+  "exclude": [
+    "src/*.test.ts"
+  ]
 }
